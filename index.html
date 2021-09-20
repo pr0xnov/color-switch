@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch color</title>
+    <style>
+      body {
+        margin-top: 350px;
+        padding: 0;
+        text-align: center;
+        background: rgb(116, 147, 148);
+      }
+      button {
+        padding: 20px 50px;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+      }
+      [data-action="start"] {
+        background: rgb(98, 231, 98);
+        color: #fff;
+      }
+      [data-action="stop"] {
+        background: rgb(226, 14, 14);
+        color: #fff;
+      }
+      [disabled="disabled"] {
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" data-action="start">Start</button>
+    <button type="button" data-action="stop">Stop</button>
+    <script src="index.js"></script>
+  </body>
+</html>
